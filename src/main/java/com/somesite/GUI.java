@@ -8,19 +8,19 @@ public class GUI extends JFrame
 {
   JPanel view;
 
-  final JButton a1 = new JButton("a1");
-  final JButton a2 = new JButton("a2");
-  final JButton a3 = new JButton("a3");
+  final JButton a1 = new JButton();
+  final JButton a2 = new JButton();
+  final JButton a3 = new JButton();
 
 
-  final JButton b1 = new JButton("b1");
-  final JButton b2 = new JButton("b2");
-  final JButton b3 = new JButton("b3");
+  final JButton b1 = new JButton();
+  final JButton b2 = new JButton();
+  final JButton b3 = new JButton();
 
 
-  final JButton c1 = new JButton("c1");
-  final JButton c2 = new JButton("c2");
-  final JButton c3 = new JButton("c3");
+  final JButton c1 = new JButton();
+  final JButton c2 = new JButton();
+  final JButton c3 = new JButton();
   public GUI()
   {
     super("Tic Tac Toe");
