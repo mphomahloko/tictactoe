@@ -4,7 +4,7 @@ public class App
 {
   public static void main(String... args)
   {
-    final Controller controller = new Controller(new GUI());
+    final Controller controller = new Controller();
 
     controller.start();
   }

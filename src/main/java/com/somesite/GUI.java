@@ -45,6 +45,12 @@ public class GUI extends JFrame
   }
 
 
+  public JButton[][] getMap()
+  {
+    return this.map;
+  }
+
+
   public void  addPlayerInteraction(final ActionListener listener)
   {
     for (int rw = 0; rw < 3; rw+=1)
