@@ -33,6 +33,7 @@ public class GUI extends JFrame
       for (int col = 0; col < 3; col+=1)
       {
         this.view.add(this.map[rw][col]);
+        this.map[rw][col].setName(rw+"."+col);
       }
     }
 

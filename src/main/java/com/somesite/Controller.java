@@ -3,6 +3,7 @@ package com.somesite;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
 
 public class Controller
 {
@@ -22,7 +23,8 @@ public class Controller
   public static void continueGame(final JButton jButton)
   {
     final JButton[][] map = Controller.view.getMap();
-    // TODO: determine if game continues from by checking from the last position played
+    String[] pos = jButton.getName().split("\\."); // split name to obtain row and col in map
+    System.out.println(Arrays.toString(pos));
   }
 
   static class Listener implements ActionListener
