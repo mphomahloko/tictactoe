@@ -24,7 +24,8 @@ public class Controller
   {
     final JButton[][] map = Controller.view.getMap();
     String[] pos = jButton.getName().split("\\."); // split name to obtain row and col in map
-    System.out.println(Arrays.toString(pos));
+    int selectedRow = Integer.parseInt(pos[0]), selectedColumn = Integer.parseInt(pos[1]);
+    
   }
 
   static class Listener implements ActionListener
