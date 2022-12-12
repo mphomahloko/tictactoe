@@ -37,7 +37,6 @@ public class GUI extends JFrame
       }
     }
 
-
     this.add(this.view);
     this.setSize(300, 300);
     this.setVisible(true);
