@@ -30,14 +30,13 @@ public class Controller
 
   public static void continueGame(final JButton jButton)
   {
-    final String move = jButton.getName();
-    moves.put(move, g_PlayerTurn);
+    moves.put(jButton.getName(), g_PlayerTurn);
     if (g_numberOfMoves > 4)
     {
-      final JButton[][] map = Controller.view.getMap();
-      final String[] pos = move.split("\\."); // split name to obtain row and col in map
-      int selectedRow = Integer.parseInt(pos[0]), selectedColumn = Integer.parseInt(pos[1]);
-
+      for(final String move : moves.keySet())
+      {
+        System.out.println(move);
+      }
     }
   }
 
