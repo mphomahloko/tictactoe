@@ -30,10 +30,17 @@ public class Controller
 
   public static void continueGame(final JButton jButton)
   {
-    moves.put(jButton.getName(), g_PlayerTurn);
-    if (g_numberOfMoves > 4)
+    if (moves.containsKey(g_PlayerTurn))
     {
-      for(final String move : moves.keySet())
+      moves.put(g_PlayerTurn, moves.get(g_PlayerTurn)+"|"+jButton.getName());
+    }
+    else
+    {
+      moves.put(g_PlayerTurn, jButton.getName());
+    }
+    if (++g_numberOfMoves > 4)
+    {
+      for(final String move : moves.values())
       {
         System.out.println(move);
       }
